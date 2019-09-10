@@ -1,0 +1,22 @@
+{
+  "name": "elegant-bro/interfaces",
+  "license": ["MIT"],
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "ElegantBro\\Interfaces\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ElegantBro\\Interfaces\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.1"
+    }
+  }
+}
