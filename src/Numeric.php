@@ -6,11 +6,11 @@ namespace ElegantBro\Interfaces;
 
 use Exception;
 
-interface Stringify
+interface Numeric
 {
     /**
-     * @return string
+     * @return string Number
      * @throws Exception
      */
-    public function asString(): string;
+    public function asNumber(): string;
 }

@@ -4,20 +4,20 @@ declare(strict_types=1);
 
 namespace ElegantBro\Interfaces\Tests;
 
-use ElegantBro\Interfaces\Tests\Stub\FooStringify;
+use ElegantBro\Interfaces\Tests\Stub\NumberFive;
 use Exception;
 use PHPUnit\Framework\TestCase;
 
-final class StringifyTest extends TestCase
+final class NumericTest extends TestCase
 {
     /**
      * @throws Exception
      */
-    public function testAsString(): void
+    public function testAsNumber(): void
     {
         $this->assertEquals(
-            'foo',
-            (new FooStringify())->asString()
+            5,
+            (new NumberFive())->asNumber()
         );
     }
 }

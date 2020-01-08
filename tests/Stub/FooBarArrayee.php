@@ -1,15 +1,14 @@
-<?php declare(strict_types=1);
+<?php
 
+declare(strict_types=1);
 
 namespace ElegantBro\Interfaces\Tests\Stub;
-
 
 use ElegantBro\Interfaces\Arrayee;
 use Exception;
 
 final class FooBarArrayee implements Arrayee
 {
-
     /**
      * @return array
      * @throws Exception
