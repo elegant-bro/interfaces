@@ -89,3 +89,29 @@ final class MyArrayee implements Arrayee
     }
 }
 ```
+
+```php
+<?php
+
+declare(strict_types=1);
+
+use ElegantBro\Interfaces\Predicate;
+
+final class Odd implements Predicate
+{
+    /**
+     * @var int
+     */
+    private $val;
+ 
+    public function __construct(int $val) 
+    {
+        $this->val = $val;
+    }
+    
+    public function asBool() : bool
+    {
+        return 0 === $this->val % 2;
+    }
+}
+```
