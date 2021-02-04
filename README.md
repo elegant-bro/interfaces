@@ -111,7 +111,7 @@ final class Odd implements Predicate
     
     public function asBool() : bool
     {
-        return 0 === $this->val % 2;
+        return 0 !== $this->val % 2;
     }
 }
 ```
