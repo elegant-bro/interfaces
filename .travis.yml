@@ -4,8 +4,16 @@ php:
   - '7.2'
   - '7.3'
   - '7.4'
+  - '8.0'
+
 branches:
   only:
     - master
 
-install: composer install
+
+install:
+  - composer install --dev
+
+script:
+  - vendor/bin/phpcs -p --standard=PSR12 src
+  - vendor/bin/phpunit
